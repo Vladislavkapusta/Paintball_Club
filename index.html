@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Пейнтбольный клуб</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header__title">Пейнтбольный клуб</h1>
+    </header>
+    
+    <section class="slider">
+        <div class="slider__container">
+            <button class="slider__button slider__button--prev">⬅</button>
+            <div class="slider__item">
+                <img src="../images/paintball1.png" alt="Пейнтбол 1" class="slider__image">
+                <h2 class="slider__title">Пакет 1</h2>
+                <p class="slider__price">Цена: 3000₽</p>
+            </div>
+            <div class="slider__item">
+                <img src="../images/paintball2.png" alt="Пейнтбол 1" class="slider__image">
+                <h2 class="slider__title">Пакет 2</h2>
+                <p class="slider__price">Цена: 4000₽</p>
+            </div>
+            <div class="slider__item">
+                <img src="../images/paintball3.png" alt="Пейнтбол 1" class="slider__image">
+                <h2 class="slider__title">Пакет 3</h2>
+                <p class="slider__price">Цена: 3500₽</p>
+            </div>
+            <button class="slider__button slider__button--next">➡</button>
+        </div>
+    </section>
+    
+    <section class="form">
+        <h2 class="form__title">Бронирование</h2>
+        <form class="form__body" id="bookingForm">
+            <div class="form__group">
+                <label for="people" class="form__label">Количество людей:</label>
+                <input type="number" id="people" class="form__input" required>
+            </div>
+            <div class="form__group">
+                <label for="name" class="form__label">Имя и фамилия:</label>
+                <input type="text" id="name" class="form__input" required>
+            </div>
+            <div class="form__group">
+                <label for="phone" class="form__label">Телефон:</label>
+                <input type="tel" id="phone" class="form__input" required>
+            </div>
+            <button type="submit" class="form__submit">Готово</button>
+        </form>
+    </section>
+    
+    <footer class="footer">
+        <p class="footer__text">© 2024 Пейнтбольный клуб. Все права защищены.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
